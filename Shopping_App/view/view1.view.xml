@@ -1,0 +1,63 @@
+<core:View xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="view.view1">
+	<Page showSubHeader="true" title="Jessi´s Shopping App" titleLevel="Auto">
+		<content>
+			<Table id="__table0" noDataText="Drop column list items here and columns in the area above">
+				<items>
+					<ColumnListItem counter="0" id="__item1">
+						<cells>
+							<Link ariaLabelledBy="__xmlview0--__label0" text="ASOS" textAlign="Begin" id="__link3" href="http://www.asos.de/"/>
+							<Link ariaLabelledBy="__xmlview0--__label0 __xmlview0--__label1" text="Link" textAlign="Begin" id="__link2" href="https://www.gutscheinpony.de/gutscheine/asos"/></cells>
+					</ColumnListItem>
+					<ColumnListItem counter="0" id="__item8">
+						<cells>
+							<Link ariaLabelledBy="__xmlview0--__label0" text="Mango" textAlign="Begin" id="__link22" href="http://shop.mango.com/DE"/>
+							<Link ariaLabelledBy="__xmlview0--__label0 __xmlview0--__label23" text="Link" textAlign="Begin" id="__link24" href="https://www.gutscheinpony.de/gutscheine/mango"/></cells>
+					</ColumnListItem>
+					<ColumnListItem counter="0" id="__item2">
+						<cells>
+							<Link ariaLabelledBy="__xmlview0--__label0" text="Fashion ID" textAlign="Begin" id="__link4" href="https://www.fashionid.de/"/>
+							<Link ariaLabelledBy="__xmlview0--__label0 __xmlview0--__label5" text="Link" textAlign="Begin" id="__link6" href="https://www.gutscheinpony.de/gutscheine/fashionid"/></cells>
+					</ColumnListItem>
+					<ColumnListItem counter="0" id="__item3">
+						<cells>
+							<Link ariaLabelledBy="__xmlview0--__label0" text="Zalando" textAlign="Begin" id="__link7" href="https://www.zalando.de/"/>
+							<Link ariaLabelledBy="__xmlview0--__label0 __xmlview0--__label8" text="Link" textAlign="Begin" id="__link9" href="https://www.gutscheinpony.de/gutscheine/zalando"/></cells>
+					</ColumnListItem>
+					<ColumnListItem counter="0" id="__item4">
+						<cells>
+							<Link ariaLabelledBy="__xmlview0--__label0" text="Kickz" textAlign="Begin" id="__link10" href="https://www.kickz.com/de/"/>
+							<Link ariaLabelledBy="__xmlview0--__label0 __xmlview0--__label11" text="Link" textAlign="Begin" id="__link12" href="https://www.gutscheinpony.de/gutscheine/kickz"/></cells>
+					</ColumnListItem>
+					<ColumnListItem counter="0" id="__item5">
+						<cells>
+							<Link ariaLabelledBy="__xmlview0--__label0" text="Görtz" textAlign="Begin" id="__link13" href="https://www.goertz.de/"/>
+							<Link ariaLabelledBy="__xmlview0--__label0 __xmlview0--__label14" text="Link" textAlign="Begin" id="__link15" href="https://www.gutscheinpony.de/gutscheine/goertz"/></cells>
+					</ColumnListItem>
+					<ColumnListItem counter="0" id="__item6">
+						<cells>
+							<Link ariaLabelledBy="__xmlview0--__label0" text="Christ" textAlign="Begin" id="__link16" href="http://www.christ.de/"/>
+							<Link ariaLabelledBy="__xmlview0--__label0 __xmlview0--__label17" text="Link" textAlign="Begin" id="__link18" href="https://www.gutscheinpony.de/gutscheine/christ"/></cells>
+					</ColumnListItem>
+					<ColumnListItem counter="0" id="__item7">
+						<cells>
+							<Link ariaLabelledBy="__xmlview0--__label0" text="Valmano" textAlign="Begin" id="__link19" href="http://www.valmano.de/"/>
+							<Link ariaLabelledBy="__xmlview0--__label0 __xmlview0--__label20" text="Link" textAlign="Begin" id="__link21" href="https://www.gutscheinpony.de/gutscheine/valmano"/></cells>
+					</ColumnListItem>
+				</items>
+				<columns>
+					<Column id="__column0">
+						<header>
+							<Label id="__label0" text="Seite"/>
+						</header>
+					</Column>
+					<Column id="__column2">
+						<header>
+							<Label id="__label2" text="Gutscheine"/>
+						</header>
+					</Column>
+				</columns>
+				<customData><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+			</Table>
+		</content>
+	</Page>
+</core:View>
