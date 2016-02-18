@@ -7,9 +7,9 @@
 				<Key>
 					<PropertyRef Name="Id"/>
 				</Key>
-				<Property Name="Id" Nullable="false" Type="Edm.String"/>
-				<Property Name="field1" Nullable="false" Type="Edm.String"/>
-				<Property Name="field2" Nullable="false" Type="Edm.String"/>
+				<Property Name="Seite" Nullable="false" Type="Edm.String"/>
+				<Property Name="Kategorie" Nullable="false" Type="Edm.String"/>
+				<Property Name="Gutscheine" Nullable="false" Type="Edm.String"/>
 			</EntityType>
 			<EntityType Name="Entity2">
 				<Key>
