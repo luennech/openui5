@@ -1,0 +1,176 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="RETAIL_NOW_APP.view.Detail">
+	<Page id="detailPage" navButtonPress="onNavBack" showNavButton="{device&gt;/isPhone}" title="{i18n&gt;detailTitle}">
+		<content>
+			<ObjectHeader iconActive="false" id="detailHeader" introActive="false" number="{KUNNR}" numberUnit="{ORT01}" title="{NAMEKOMP}" titleActive="false">
+				<attributes id="detailAttributes">
+					<ObjectAttribute active="false" id="attribute" text="{i18n&gt;detailText}"/>
+				</attributes>
+				<firstStatus id="detailStatus">
+					<ObjectStatus id="status" text=""/>
+				</firstStatus>
+			</ObjectHeader>
+			<IconTabBar expanded="{device&gt;/isNoPhone}" id="idIconTabBar">
+				<items id="detailsItems">
+					<IconTabFilter icon="sap-icon://customer" id="iconTabFilter1" key="selfInfo" text="Kundendaten" iconColor="Neutral">
+						<content>
+							<f:SimpleForm columnsL="1" editable="false" emptySpanL="4" emptySpanM="4" id="iconTabFilter1form" labelSpanL="3" labelSpanM="3" layout="ResponsiveGridLayout" minWidth="1024">
+								<f:content>
+									<Image src="https://thebenclark.files.wordpress.com/2014/03/facebook-default-no-profile-pic.jpg" width="197px" height="197px" id="__image4"/>
+									<Label id="label1" text="Kundennummer"/>
+									<Text id="text1" maxLines="0" text="{KUNNR}"/>
+									<Label id="label2" text="Anrede"/>
+									<Text id="text2" maxLines="0" text="{ANRED}"/>
+									<Label id="label3" text="Vorname"/>
+									<Text id="text3" maxLines="0" text="{NAME1}"/>
+									<Label text="Label" width="100%" id="__label0"/>
+									<Label id="label4" text="Nachname"/>
+									<Text id="text4" maxLines="0" text="{NAME2}"/>
+									<Label id="label5" text="Adresse"/>
+									<Text id="text5" maxLines="0" text="{STRAS}"/>
+									<Label id="label6" text="PLZ"/>
+									<Text id="text6" maxLines="0" text="{PSTLZ}"/>
+									<Label id="label7" text="Ort"/>
+									<Text id="text7" maxLines="0" text="{ORT01}"/>
+									<Label id="label8" text="Land"/>
+									<Text id="text8" maxLines="0" text="{LAND1}"/>
+									<Label id="label9" text="Telefon"/>
+									<Text id="text9" maxLines="0" text="{TELF1}"/>
+										
+									<Label id="labe11" text="Alter"/>
+									<Text id="text11" maxLines="0" text="{TELF1}"/>
+									<Label id="label12" text="Hemdengröße"/>
+									<Text id="text12" maxLines="0" text="{TELF1}"/>
+									<Label id="label13" text="Hosengröße"/>
+									<Text id="text13" maxLines="0" text="{TELF1}"/>
+									
+									<core:ExtensionPoint name="extIconTabFilterForm1"/>
+								</f:content>
+							</f:SimpleForm>
+						</content>
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://my-sales-order" id="iconTabFilter2" key="SeineBestellungen" text="Bestellungen">
+						<content>
+							<List growing="true" growingScrollToLoad="true" id="listBST" items="{/BSTView}" mode="{device&gt;/listMode}" noDataText="{i18n&gt;masterListNoDataText}" select="onSelect">
+								<items id="masterListBST">
+									<ObjectListItem markFavorite="false" activeIcon="" markFlagged="false" id="mainListItemBST" icon="sap-icon://accept" iconColor="Positive" counter="0" intro="Belegnummer: {VBELN}" number="Bestellwert: {NETWR}" numberUnit="{WAERK}" press="onSelect" showMarkers="false" title="{ERDAT}" titleTextDirection="Inherit" type="{device&gt;/listItemType}">
+										
+                    					<attributes>
+                    						<ObjectAttribute text="Artikelnummer: {MAKTX} ({MATNR})"/>
+                    						<ObjectAttribute text="Beschreibung: {MAKTX} ({MATNR})"/>
+                    						<ObjectAttribute text="Marke: {MAKTX} ({MATNR})"/>
+                    						<ObjectAttribute text="Farbe: {MAKTX} ({MATNR})"/>
+                    						<ObjectAttribute text="Größe: {MAKTX} ({MATNR})"/>
+                    						<ObjectAttribute text="Kategorie: {MAKTX} ({MATNR})"/>
+                    						<ObjectAttribute text="Stückpreis: {MAKTX} ({MATNR})"/>
+                    					</attributes>
+                    					<firstStatus>
+                    						<ObjectStatus text="Menge: {KLMENG}"/>
+                						</firstStatus>
+						
+										<core:ExtensionPoint name="extListItemInfoBST"/>
+									</ObjectListItem>
+								</items>
+							</List>
+						</content>
+					</IconTabFilter>
+					<IconTabFilter icon="sap-icon://cart" id="iconTabFilter3" key="SeineKaufempfehlungen" text="Empfehlungen">
+						<content>
+							<List growing="true" growingScrollToLoad="true" id="listKV" items="{/KVView}" mode="{device&gt;/listMode}" noDataText="{i18n&gt;masterListNoDataText}" select="onSelect">
+								<items id="masterListKV">
+									<ObjectListItem markFavorite="false" activeIcon="" markFlagged="false" id="mainListItemKV" icon="sap-icon://tags" counter="0" intro="Artikelnummer: {MATNR}" number="Stückpreis: {LABST}" numberUnit="Euro" press="onSelect" showMarkers="false" title="{MAKTX}" titleTextDirection="Inherit" type="{device&gt;/listItemType}">
+									    
+									    <!-- zusätzliche Attribut-Zeile -->
+									    
+										<attributes>
+                    						<ObjectAttribute text="Marke: {MAKTX} ({MATNR})"/>
+                    						<ObjectAttribute text="Farbe: {MAKTX} ({MATNR})"/>
+                    						<ObjectAttribute text="Größe: {MAKTX} ({MATNR})"/>
+                    						<ObjectAttribute text="Kategorie: {MAKTX} ({MATNR})"/>
+                						</attributes>
+                						<firstStatus>
+                							<ObjectStatus text="Lagerstatus: {LABST}"/>
+                						</firstStatus>
+						
+										<core:ExtensionPoint name="extListItemInfoKV"/>
+									</ObjectListItem>
+								</items>
+							</List>
+						</content>
+					</IconTabFilter>
+					<IconTabFilter text="Spielwiese" count="" icon="sap-icon://palette" iconColor="Default" id="__filter0">
+					
+					    <content>
+				
+				
+				
+					    <TextArea wrapping="None" id="__area0" rows="10" placeholder="Anmerkungen zum Kunden" width="" textAlign="Initial" valueLiveUpdate="false"/>
+				
+				
+				
+					    <Image src="http://submitinfographics.com/wp-content/uploads/2011/11/PieChartsPost2.jpg" width="420px" height="420px" id="__image3"/>
+				
+						
+				
+					    </content>
+					
+					</IconTabFilter>
+					
+					<!-- Testobjekt -->
+					
+					<IconTabFilter icon="sap-icon://inventory" id="iconTabFilter4" key="SeineKaufempfehlungen" text="Test">
+						<content>
+							<List growing="true" growingScrollToLoad="true" id="listKV2" items="{SeineKaufempfehlungen}" mode="{device&gt;/listMode}" noDataText="{i18n&gt;masterListNoDataText}" select="onSelect">
+								<items id="masterListKV2">
+									<ObjectListItem markFavorite="false" activeIcon="" markFlagged="false" id="mainListItemKV2" icon="sap-icon://tags" counter="0" intro="Artikelnummer: {MATNR}" number="Lagerbestand: {LABST}" numberUnit="Stück" press="onSelect" showMarkers="false" title="{MAKTX}" titleTextDirection="Inherit" type="{device&gt;/listItemType}">
+									    
+									    <!-- zusätzliche Attribut-Zeile -->
+									    
+										<attributes>
+                							<ObjectAttribute text=""/>
+                						</attributes>
+                						<firstStatus>
+                							<ObjectStatus text=""/>
+                						</firstStatus>
+						
+										<core:ExtensionPoint name="extListItemInfoKV2"/>
+									</ObjectListItem>
+								</items>
+							</List>
+							
+							<!-- Liste aus TEST_Association_10 Master2 -->
+
+							<List id="master2List" items="{SeineKaufempfehlungen}" mode="{device&gt;/listMode}" noDataText="{i18n&gt;masterListNoDataText}" select="onSelect" growing="false" growingScrollToLoad="false">
+                				<items>
+                					<ObjectListItem id="master2ListItem" type="{device&gt;/listItemType}" press="onSelect" title="{MAKTX}" number="{MATNR}" numberUnit="">
+                						<attributes>
+                							<ObjectAttribute text=""/>
+                						</attributes>
+                						<firstStatus>
+                							<ObjectStatus text=""/>
+                						</firstStatus>
+                					</ObjectListItem>
+                				</items>
+                			</List>
+
+							<Image src="sap-icon://picture" width="140px" height="140px" id="__image0"/>
+							
+						</content>
+					</IconTabFilter>
+					
+			
+					
+					<core:ExtensionPoint name="extIconTabFilter"/>
+				</items>
+			</IconTabBar>
+			<core:ExtensionPoint name="extDetail"/>
+		</content>
+		<footer id="detailFooter">
+			<Toolbar id="detailToolbar">
+				<content>
+					<ToolbarSpacer id="toolbarSpacer"/>
+					<Button icon="sap-icon://action" id="actionButton" press="openActionSheet"/>
+				</content>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

@@ -1,0 +1,61 @@
+[{
+	"KUNNR": "00001",
+	"VBELN": 66666,
+	"ERDAT": "10.12.2015",
+	"MATNR": "00006",
+	"MAKTX": "Tommy Hilfiger Krawatte Rot",
+	"KLMENG": "1",
+	"STKPR": "30",
+	"NETWR": 30,
+	"WAERK": "Euro"
+}, {
+	"KUNNR": "00001",
+	"VBELN": 55555,
+	"ERDAT": "09.12.2015",
+	"MATNR": "00005",
+	"MAKTX": "Hugo Boss Sakko Schwarz 48",
+	"KLMENG": "2",
+	"STKPR": "300",
+	"NETWR": 600,
+	"WAERK": "Euro"
+}, {
+	"KUNNR": "00001",
+	"VBELN": 44444,
+	"ERDAT": "08.12.2015",
+	"MATNR": "00004",
+	"KLMENG": "4",
+	"MAKTX": "Puma Socken Schwarz 44-46",
+	"STKPR": "30",
+	"NETWR": 120,
+	"WAERK": "Euro"
+}, {
+	"KUNNR": "00001",
+	"VBELN": 33333,
+	"ERDAT": "07.12.2015",
+	"MATNR": "00003",
+	"MAKTX": "Tommy Hilfiger Hemd Blau M",
+	"KLMENG": "2",
+	"STKPR": "140",
+	"NETWR": 280,
+	"WAERK": "Euro"
+}, {
+	"KUNNR": "00001",
+	"VBELN": 22222,
+	"ERDAT": "06.12.2015",
+	"MATNR": "00002",
+	"MAKTX": "Ralph Lauren Strickpullover Grau M",
+	"KLMENG": "1",
+	"STKPR": "90",
+	"NETWR": 90,
+	"WAERK": "Euro"
+}, {
+	"VBELN": 11111,
+	"KUNNR": "00001",
+	"ERDAT": "05.12.2015",
+	"MATNR": "00001",
+	"KLMENG": "4",
+	"STKPR": "50",
+	"MAKTX": "Hugo Boss Poloshirt Weiß M",
+	"NETWR": 200,
+	"WAERK": "Euro"
+}]
