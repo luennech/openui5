@@ -1,0 +1,40 @@
+<core:View controllerName="view.view1" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page showSubHeader="true" title="Your Quick Start application is ready!" titleLevel="Auto">
+		<content>
+			<VBox direction="Column" id="__vbox0" justifyContent="Center" width="100%">
+				<items>
+					<Label id="__label3" text="Try out the Layout Editor and then click Run." textAlign="Center" width="100%"/>
+				</items>
+			</VBox>
+			<Table id="__table0" items="{/Entity1_Set}" noDataText="Drop column list items here and columns in the area above">
+				<items>
+					<ColumnListItem counter="0" id="__item1">
+						<cells>
+							<Text id="__text5" maxLines="0" text="{Id}"/>
+							<Text id="__text6" maxLines="0" text="{field1}"/>
+							<Text id="__text7" maxLines="0" text="{field2}"/></cells>
+					</ColumnListItem>
+				</items>
+				<columns>
+					<Column id="__column0">
+						<header>
+							<Label id="__label0" text="Id"/>
+						</header>
+					</Column>
+					<Column id="__column1">
+						<header>
+							<Label id="__label1" text="field1"/>
+						</header>
+					</Column>
+					<Column id="__column2">
+						<header>
+							<Label id="__label2" text="field2"/>
+						</header>
+					</Column>
+				</columns>
+				<customData><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+			</Table>
+		</content>
+	</Page>
+</core:View>
