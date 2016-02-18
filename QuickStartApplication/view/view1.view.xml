@@ -4,7 +4,7 @@
 		<content>
 			<VBox direction="Column" id="__vbox0" justifyContent="Center" width="100%">
 				<items>
-					<Label id="__label3" text="Try out the Layout Editor and then click Run." textAlign="Center" width="100%"/>
+					<Label id="__label3" text="<3" textAlign="Center" width="100%"/>
 				</items>
 			</VBox>
 			<Table id="__table0" items="{/Entity1_Set}" noDataText="Drop column list items here and columns in the area above">
