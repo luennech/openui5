@@ -3,7 +3,7 @@
 		<content>
 		<TileContainer editable="true" allowAdd="true" id="__container0">
 		    <tiles>
-		        <StandardTile title="Jessi´s Shopping App" info="Info" icon="sap-icon://customer" activeIcon="sap-icon://customer" number="18.02." numberUnit="2016" infoState="Success" id="__tile0" press="href"/>
+		        <StandardTile title="Jessi´s Shopping App" info="Info" icon="sap-icon://customer" activeIcon="sap-icon://customer" number="18.02." numberUnit="2016" infoState="Success" id="__tile0" press="openURL"/>
 		        <StandardTile title="Title 2" info="Info" icon="sap-icon://customer" activeIcon="sap-icon://customer" number="123" numberUnit="eur" infoState="Success" id="__tile1"/></tiles>
 		</TileContainer>
 		</content>
