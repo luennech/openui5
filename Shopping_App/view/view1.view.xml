@@ -1,6 +1,7 @@
 <core:View xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="view.view1">
 	<Page showSubHeader="true" title="Jessi´s Shopping App" titleLevel="Auto">
 		<content>
+			<Image width="100%" height="" id="__image0" src="https://scontent.xx.fbcdn.net/hphotos-xlf1/t31.0-8/11952744_1005282526169924_5008747160539002042_o.jpg"/>
 			<IconTabBar selectedKey="__filter5" id="__bar1">
 			    <items>
 			        <IconTabFilter text="Bekleidung" count="" icon="sap-icon://open-command-field" iconColor="Default" id="__filter5">
